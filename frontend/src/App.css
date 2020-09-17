@@ -1,0 +1,73 @@
+/* Import the Font Family here */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* CSS Reset */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* body design */
+body {
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#main {
+  min-height: 40rem;
+  margin: 30px 0;
+}
+
+/* Header Design */
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.navbar-brand svg {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.nav-item .nav-link {
+  font-weight: 600;
+  line-height: 30px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.menu-active {
+  border-bottom: 4px solid blue;
+}
+/* Home Page Design */
+
+.animated {
+  animation: animationimg 2s ease-in 1s infinite alternate-reverse both;
+}
+
+@keyframes animationimg {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.text-animated {
+  animation: animationtext 5s;
+}
+
+@keyframes animationtext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
